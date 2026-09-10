@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radar APS — território e evidência</title>
+  <style>
+    :root{--paper:#f7f4ed;--ink:#18312b;--muted:#64736d;--line:#d9dfd7;--accent:#b86a3c;--soft:#e7efe8;--white:#fffdf8}
+    *{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+    header{padding:28px 6vw 20px;border-bottom:1px solid var(--line);background:var(--white)}
+    .eyebrow{color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.74rem}
+    h1{margin:.25rem 0;font:700 clamp(2rem,4vw,3.6rem)/1.03 Georgia,serif;letter-spacing:-.04em} h2{font:700 1.35rem Georgia,serif}
+    .lede{max-width:720px;color:var(--muted);margin:.75rem 0 0}
+    nav{display:flex;gap:8px;padding:16px 6vw;background:var(--white);border-bottom:1px solid var(--line);flex-wrap:wrap}
+    button{border:1px solid var(--line);border-radius:999px;padding:9px 15px;background:var(--white);color:var(--ink);font:inherit;cursor:pointer} button.active{background:var(--ink);color:var(--white)}
+    main{max-width:1220px;margin:0 auto;padding:32px 6vw 70px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px}.label{color:var(--muted);font-size:.82rem}.value{font:700 1.8rem Georgia,serif;margin-top:8px}.section{margin-top:32px}.notice{background:var(--soft);border-left:4px solid var(--accent);padding:16px 18px;border-radius:8px}.empty{border:1px dashed #b5c4b8;border-radius:14px;padding:28px;color:var(--muted);background:#fbfaf5}.cols{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.small{font-size:.9rem;color:var(--muted)}ul{padding-left:1.2rem}@media(max-width:800px){.grid,.cols{grid-template-columns:1fr 1fr}}@media(max-width:520px){.grid,.cols{grid-template-columns:1fr}main{padding-top:24px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="eyebrow">Radar APS · MVP público</div>
+    <h1>Território antes do palpite.</h1>
+    <p class="lede">Uma leitura auditável de desigualdades e pressão sobre a Atenção Primária. O painel separa dado observado, estimativa e lacuna de fonte.</p>
+  </header>
+  <nav aria-label="visões"><button class="active">Gestão municipal</button><button>Gestão da UBS</button><button>Fontes e método</button></nav>
+  <main>
+    <section class="notice"><strong>Estado da evidência:</strong> a camada territorial e CNES está sendo construída com fontes oficiais. O indicador ICSAP ainda não aparece como endpoint direto no catálogo da API aberta e não será inventado enquanto a derivação SIH não for validada.</section>
+    <section class="section"><h2>Prioridade territorial</h2><div class="grid"><div class="card"><div class="label">Municípios cobertos</div><div class="value">—</div><div class="small">aguardando ingestão publicada</div></div><div class="card"><div class="label">Regiões de Saúde</div><div class="value">—</div><div class="small">fonte: Ministério da Saúde</div></div><div class="card"><div class="label">ICSAP · 12 meses</div><div class="value">—</div><div class="small">fonte em validação</div></div><div class="card"><div class="label">Confiança do ranking</div><div class="value">—</div><div class="small">sem índice antes do contrato</div></div></div></section>
+    <section class="section cols"><div class="card"><h2>Ranking</h2><div class="empty">O ranking será preenchido somente após validar numerador, denominador, período e cobertura territorial. Nenhum número demonstrativo é apresentado como dado real.</div></div><div class="card"><h2>Leitura rápida</h2><ul><li>Compare município com sua Região de Saúde.</li><li>Abra a série de cinco anos quando houver cobertura.</li><li>Leia a nota metodológica antes de agir.</li></ul></div></section>
+    <section class="section"><h2>Contrato de dados</h2><p class="small">DATASUS/Ministério da Saúde para saúde e CNES; IBGE para população e território. Códigos oficiais são preservados para os cruzamentos. Dados pessoais não entram no produto.</p></section>
+  </main>
+</body>
+</html>
