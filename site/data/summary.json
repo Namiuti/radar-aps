@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-09-10T04:01:21+00:00",
+  "sources": {
+    "ibge_municipios": {
+      "count": 5571,
+      "status": "observed"
+    },
+    "health_regions": {
+      "count": 860,
+      "status": "observed"
+    },
+    "ubs": {
+      "count": 1000,
+      "status": "sample"
+    },
+    "cnes_estabelecimentos": {
+      "count": 60,
+      "status": "sample"
+    },
+    "icsap": {
+      "count": null,
+      "status": "pending_official_sih_validation"
+    }
+  },
+  "method": "Metadata territorial e assistencial coletados de APIs oficiais; ICSAP não é inferido."
+}
